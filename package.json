@@ -1,0 +1,47 @@
+{
+  "name": "calendar-picker",
+  "version": "1.0.0",
+  "description": "calendar picker",
+  "main": "dist/calender-picker.js",
+  "module": "dist/calender-picker.esm.js",
+  "type": "module",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development rollup -w -c",
+    "build": "cross-env NODE_ENV=production rollup -c",
+    "prepare": "husky install",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
+  },
+  "keywords": [
+    "rollup",
+    "typescipt",
+    "sass",
+    "vue"
+  ],
+  "author": "Jennifer",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.22.10",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.18.6",
+    "@babel/plugin-proposal-optional-chaining": "^7.21.0",
+    "@babel/preset-env": "^7.22.10",
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-terser": "^0.4.3",
+    "conventional-changelog": "^4.0.0",
+    "conventional-changelog-cli": "^3.0.0",
+    "cross-env": "^7.0.3",
+    "husky": "^8.0.3",
+    "rollup": "^3.28.1",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-serve": "^2.0.2",
+    "rollup-plugin-vue": "^5.0.0"
+  }
+}

@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <!-- 开发环境测试 umd。如果测试 esm 注释该行 -->
+    <script src="./calender-picker.js"></script>
+    <!-- 生产环境测试 -->
+    <!-- <script src="../dist/calender-picker.js"></script> -->
+  </head>
+  <body>
+    <div id="app">
+      <calender-picker style="width: 300px"/>
+    </div>
+    <script type='module'>
+      // 开发环境测试 esm。如果测试 umd 注释该行
+      // import CalenderPicker from './calender-picker.esm.js'
+      // 生产环境需要配合 vscode 的 live server 插件，在当前页面打开
+      // import CalenderPicker from '../dist/calender-picker.esm.js'
+      var app = new Vue({
+        components:{ CalenderPicker },
+        el: '#app',
+      })
+    </script>
+  </body>
+</html>

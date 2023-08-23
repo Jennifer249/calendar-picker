@@ -1,0 +1,5 @@
+.*
+*.config.js
+/example
+/public
+/src
