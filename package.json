@@ -12,7 +12,7 @@
     "dev": "cross-env NODE_ENV=development rollup -w -c",
     "build": "cross-env NODE_ENV=production rollup -c",
     "prepare": "husky install",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
+    "release": "release-it"
   },
   "keywords": [
     "rollup",
@@ -31,10 +31,9 @@
     "@commitlint/config-conventional": "^17.7.0",
     "@rollup/plugin-babel": "^6.0.3",
     "@rollup/plugin-terser": "^0.4.3",
-    "conventional-changelog": "^4.0.0",
-    "conventional-changelog-cli": "^3.0.0",
     "cross-env": "^7.0.3",
     "husky": "^8.0.3",
+    "release-it": "^16.1.5",
     "rollup": "^3.28.1",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-livereload": "^2.0.5",
