@@ -49,6 +49,7 @@ export default {
         'translation',
         'security',
         'changeset',
+        'release'
       ],
     ],
   },
