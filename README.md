@@ -24,7 +24,7 @@ npm run build
 # 使用
 
 ```html
-<calender-picker
+<v-calender-pick
   :exceed="true"
   title="日期"
   :value="[]"

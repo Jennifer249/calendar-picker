@@ -28,10 +28,10 @@ const pluginsWithEnv = isProduction ? [terser()] : [serve({
 
 export default [{
   input: 'src/App.vue',
-  output: { 
-    file: 'dist/calender-picker.js',
+  output: {
+    file: 'dist/v-calender-pick.js',
     format: 'umd',
-    name: 'CalenderPicker'
+    name: 'VCalenderPick'
   },
   plugins: [
     peerDepsExternal(),
@@ -40,26 +40,26 @@ export default [{
       minimize: isProduction,
       use: ['sass'],
     }),
-    resolve(), 
+    resolve(),
     commonjs(),
     babel(babelOptions),
     ...pluginsWithEnv,
-   
+
   ]
 }, {
-  input: 'src/App.vue', 
-  output: { 
-    file: 'dist/calender-picker.esm.js',
+  input: 'src/App.vue',
+  output: {
+    file: 'dist/v-calender-pick.esm.js',
     format: 'esm',
   },
-  plugins: [ 
+  plugins: [
     peerDepsExternal(),
     vue(),
     postcss({
       minimize: isProduction,
       use: ['sass'],
     }),
-    resolve(), 
+    resolve(),
     commonjs(),
     babel(babelOptions),
     ...pluginsWithEnv,

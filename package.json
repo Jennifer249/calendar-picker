@@ -1,9 +1,9 @@
 {
-  "name": "v-calendar-picker",
+  "name": "v-calendar-pick",
   "version": "0.1.0",
-  "description": "calendar picker",
-  "main": "dist/calender-picker.js",
-  "module": "dist/calender-picker.esm.js",
+  "description": "calendar picker for Vue",
+  "main": "dist/v-calender-pick.js",
+  "module": "dist/v-calender-pick.esm.js",
   "type": "module",
   "files": [
     "/dist"

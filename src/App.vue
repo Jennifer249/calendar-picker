@@ -60,7 +60,7 @@
 <script>
 import utils from "./utils.js";
 export default {
-  name: "calender-picker",
+  name: "v-calender-picker",
   directives: {
     click: {
       bind(el, _, vnode) {
