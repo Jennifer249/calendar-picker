@@ -9,17 +9,36 @@
   </head>
   <body>
     <div id="app">
-      <calender-picker style="width: 300px"/>
+      <calender-picker
+        :exceed="exceed"
+        :title="title"
+        :value="value"
+        :isVisible="isVisible"
+        @confirm="handleConfirm"
+      />
     </div>
-    <script type='module'>
+    <script type="module">
       // 开发环境测试 esm。如果测试 umd 注释该行
       // import CalenderPicker from './calender-picker.esm.js'
       // 生产环境需要配合 vscode 的 live server 插件，在当前页面打开
       // import CalenderPicker from '../dist/calender-picker.esm.js'
       var app = new Vue({
-        components:{ CalenderPicker },
+        components: { CalenderPicker },
         el: '#app',
-      })
+        data() {
+          return {
+            title: '选择日期',
+            value: [new Date()],
+            isVisible: true,
+            exceed: true,
+          };
+        },
+        methods: {
+          handleConfirm(val) {
+            console.log('val:', val);
+          },
+        },
+      });
     </script>
   </body>
 </html>

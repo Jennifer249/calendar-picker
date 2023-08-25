@@ -1,5 +1,5 @@
 {
-  "name": "calendar-picker",
+  "name": "v-calendar-picker",
   "version": "0.0.1",
   "description": "calendar picker",
   "main": "dist/calender-picker.js",
