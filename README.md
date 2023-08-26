@@ -1,4 +1,4 @@
-# v-calendar-picker
+# v-calendar-pick
 
 ### calendar picker, with rollup, vue, scss
 
