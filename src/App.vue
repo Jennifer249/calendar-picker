@@ -21,14 +21,10 @@
       </div>
 
       <div class="calender-picker__header-next">
-        <span
-          class="calender-picker__btn calender-picker__btn-next--month"
-          ref="nextMonth"
+        <span class="calender-picker__btn calender-picker__btn-next--month"
           >&gt;</span
         >
-        <span
-          class="calender-picker__btn calender-picker__btn-next--year"
-          ref="nextYear"
+        <span class="calender-picker__btn calender-picker__btn-next--year"
           >&gt;&gt;</span
         >
       </div>
@@ -41,7 +37,6 @@
       </div>
       <div class="calender-picker__month">
         <div
-          ref="day"
           :class="[
             'calender-picker__day',
             getDayTypeClass(i),
